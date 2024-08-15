@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   return (
     <div>
-      <ul className='flex flex-col items-center justify-center'>
+      <ul className='flex flex-col items-center justify-center pt-28 text-lg'>
         <Fragment>
           <li>Name: {contactDetails.name}</li>
           <li>Profession: {contactDetails.profession}</li>

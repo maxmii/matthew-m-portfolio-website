@@ -17,7 +17,9 @@
 }
 
 body {
-  background: white;
+  background-image: url('../../public/img/building.jpg');
+  background-position: center;
+  background-size: cover;
 }
 @layer utilities {
   .text-balance {

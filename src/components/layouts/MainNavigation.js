@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Logo from '../../img/Iridium Logo.jpeg';
+import Logo from '../../../public/img/Iridium Logo.png';
 
 const navLinks = [
   {
@@ -23,22 +23,13 @@ const navLinks = [
 ];
 
 const MainNavigation = () => {
-  //   const pathName = usePathname();
   return (
-    <div className="rounded-md bg-slate-500">
-      <div>
-        <Image
-          src={Logo}
-          alt="Logo"
-          width={60}
-          height={60}
-          className="text-left"
-        />
-      </div>
-      <div>
-        <ul className="justify-around relative flex text-justify">
+    <div className='rounded-md bg-black mb-4'>
+      <div className='flex'>
+        <Image src={Logo} alt='Logo' width={150} height={150} />
+        <ul className='justify-around relative flex text-justify'>
           {navLinks.map(({ title, path }) => (
-            <li key={title}>
+            <li key={title} className='text-white mx-64 mt-2.5'>
               <Link href={path}>{title}</Link>
             </li>
           ))}
